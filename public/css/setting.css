@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iranyekan;
+
+}
+@font-face {
+    font-family: iranyekan;
+    src: url(../fonts/IRANYekanWeb.eot);
+    src: url(../fonts/IRANYekanWeb.ttf);
+    src: url(../fonts/IRANYekanWeb.woff);
+    src: url(../fonts/IRANYekanWeb.woff2);
+
+    
+}
+:root{
+    --textcolor-arsenic:#424242;
+    --bg-snowflake:#f0f0f1;
+    --text-smoky-black:#0c0c0c;
+    --a-text-color:#62666D;
+
+}
+.line {
+    width :1px;
+    height: 24px;
+    background-color: var(--text-smoky-black);
+}

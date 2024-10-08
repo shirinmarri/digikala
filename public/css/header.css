@@ -1,0 +1,231 @@
+header {
+  width: 100%;
+  height: 168px;
+  background-color: rgb(251, 247, 247);
+  box-shadow: 1px 1px 2px var(--a-text-color);
+  .top {
+    width: 100%;
+    height: 60px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .middle {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    .right {
+      width: 85%;
+      height: 100%;
+      display: flex;
+      display: flex;
+      flex-flow: wrap;
+      align-items: center;
+      .logo {
+        width: 20%;
+        height: 100%;
+        display: flex;
+
+        & img {
+          width: 195px;
+          height: 30px;
+          object-fit: cover;
+          margin: auto;
+        }
+      }
+      .search {
+        width: 632px;
+        height: 44px;
+        padding: 0px 16px;
+        background-color: var(--bg-snowflake);
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        border-radius: 8px;
+
+        .searchicon {
+          width: 24px;
+          height: 24px;
+        }
+        .searchinput {
+          width: 576px;
+          height: 100%;
+
+          display: flex;
+          align-items: center;
+          & input {
+            width: 100%;
+            height: 26px;
+            padding: 0px 16px;
+            background-color: transparent;
+            border: 0;
+            outline: unset;
+            &::placeholder {
+              color: #424242;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .left {
+      width: 15%;
+      height: 100%;
+
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      column-gap: 10px;
+
+      .login {
+        width: 135px;
+        height: 40px;
+        padding: 8px 16px;
+
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border: 1px solid var(--text-smoky-black);
+        margin-right: 10px;
+        & svg {
+          width: 24px;
+          height: 24px;
+        }
+
+        & a {
+          font-size: 12px;
+          color: var(--text-smoky-black);
+          justify-content: center;
+          padding: 2px;
+          text-decoration: none;
+        }
+      }
+      .basket {
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+      }
+    }
+  }
+  .bottom {
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .menue {
+      width: 70%;
+      height: 100%;
+
+      & nav {
+        width: 100%;
+        height: 100%;
+        .mainmenue {
+          width: 100%;
+          height: 100%;
+
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 10px;
+          .item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            list-style: none;
+            & a {
+              text-decoration: none;
+              color: var(--a-text-color);
+              font-size: 12px;
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              background-color: aqua;
+          
+            }
+            &:hover{
+              .submenue{
+                display: block;
+              }
+            }
+            .submenue{
+              width: 80%;
+              height: 500px;
+              background-color: #424242;
+              position: absolute;
+              top:168px;
+              z-index: 9999999999;
+              display: none;
+              .megamenue{
+                width: 18%;
+                height: 100%;
+                background-color: blueviolet;
+                list-style: none;
+                
+                 
+                .mega{
+                  width: 100%;
+                  height: 50px;
+                  background-color: rgb(20, 145, 9);
+                  line-height: 50px;
+                 padding-right: 20px;
+                  cursor: pointer;
+                  .submenueleft{
+                    width: 82%;
+                    height: 100%;
+                    background-color: rgb(112, 70, 8);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    display: flex;
+                    flex-flow: row wrap;
+                    gap: 5px;
+                    justify-content: center;
+                    .items{
+                      width: 24%;
+                      height: 100%;
+                      gap: 5px;
+                      background-color: deeppink;
+                      
+                      
+                    }
+                  }
+
+                }
+              }
+
+
+
+
+            }
+          }
+        }
+      }
+    }
+    .city {
+      width: 15%;
+      height: 100%;
+      & a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+
+        font-size: 12px;
+        text-decoration: none;
+        color: var(--a-text-color);
+      }
+    }
+  }
+}
