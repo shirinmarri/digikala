@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: iranyekan;
+   
 
 }
+
 @font-face {
     font-family: iranyekan;
     src: url(../fonts/IRANYekanWeb.eot);
@@ -19,10 +21,20 @@
     --bg-snowflake:#f0f0f1;
     --text-smoky-black:#0c0c0c;
     --a-text-color:#62666D;
+    --megamenue-color: #3f4064;
+    --mega-bg:rgb(240,240,241);
+
 
 }
 .line {
     width :1px;
+    height: 16px;
+    background-color: var(--a-text-color);
+    color: var(--a-text-color) ;
+}
+.red-line {
+    width :1px;
     height: 24px;
-    background-color: var(--text-smoky-black);
+    background-color: red;
+    color: red;
 }
