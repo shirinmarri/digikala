@@ -1,0 +1,42 @@
+.rounditems{
+    width: 100%;
+    height: 155px;
+    padding: 0  115px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .rounditem{
+        width: 82px;
+        height: 104px;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    
+        .round{
+        width: 55px;
+        height: 55px;
+        border-radius: 55px;
+         background-color: #f0f0f1;
+         & svg{
+        display: block;
+        margin: auto;
+        margin-top: 12px;
+         }
+
+        & img{
+            width: 55px;
+            height: 55px;
+            object-fit: cover;
+        }
+        }
+       .text{
+        color: var(--a-text-color);
+        font-size: 12px;
+        align-items: center;
+       }
+
+    }
+}

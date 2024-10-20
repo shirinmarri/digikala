@@ -153,7 +153,6 @@ header {
               display: flex;
               align-items: center;
               gap: 5px;
-             
             }
             &:hover {
               .submenue {
@@ -177,27 +176,33 @@ header {
                 list-style: none;
                 overflow: auto;
 
-                .mega ,.mega-mobile , .mega-digit , .mega-book {
+                .mega,
+                .mega-mobile,
+                .mega-digit,
+                .mega-book,
+                .mega-kitchen {
                   width: 100%;
                   height: 50px;
-                
+
                   background-color: var(--mega-bg);
 
                   line-height: 50px;
-               
+
                   cursor: pointer;
                   font-size: 12px;
                   color: #3f4064;
-                  &:hover{
-                    color:red;
+                  &:hover {
+                    color: red;
                     background-color: #ffffff;
-                    svg{
+                    svg {
                       fill: red;
                     }
-                          }
-                                
+                  }
 
-                  .submenueleft-mobile  , .submenuleft-digital , .submenuleft-book{
+                  .submenueleft-mobile,
+                  .submenuleft-digital,
+                  .submenuleft-book,
+                   .submenuleft-kitchen {
                     width: 82%;
                     height: 100%;
                     background-color: #ffffff;
@@ -211,12 +216,16 @@ header {
                     justify-content: center;
                     overflow: auto;
                     border-radius: 8px;
-                    
-                    .item-titr{
-                      &:hover{color: red;}
+
+                    .item-titr {
+                      &:hover {
+                        color: red;
+                      }
                     }
 
-                    .items , .digi-items , .book-items{
+                    .items,
+                    .digi-items,
+                    .book-items {
                       width: 24.5%;
                       height: 100%;
                       gap: 5px;
@@ -224,15 +233,16 @@ header {
                       padding-right: 10px;
                       background-color: #ffffff;
 
-
-                      .mobile-submenue , .digisubmenue {
+                      .mobile-submenue,
+                      .digisubmenue {
                         list-style: none;
-                        .mobile-items , .digiitem {
+                        .mobile-items,
+                        .digiitem {
                           padding-right: 10px;
                           color: var(--a-text-color);
                           font-size: 12px;
-                          &:hover{
-                            color:red;
+                          &:hover {
+                            color: red;
                           }
                         }
                       }
@@ -243,37 +253,39 @@ header {
                       }
                     }
                   }
-                  & svg{
-                    color: #3f4064;!important
+                  & svg {
+                    color: #3f4064 !important;
                   }
-                  
-                  
-                  
                 }
-                .mega-mobile{
-                  &:hover{
-                    .submenueleft-mobile{
+                .mega-mobile {
+                  &:hover {
+                    .submenueleft-mobile {
                       z-index: 3;
                     }
                   }
                 }
-                .mega-digit{
-                  &:hover{
-                    .submenuleft-digital{
+                .mega-digit {
+                  &:hover {
+                    .submenuleft-digital {
                       z-index: 3;
                     }
                   }
                 }
-                .mega-book{
-                  &:hover{
-                    .submenuleft-book{
+                .mega-book {
+                  &:hover {
+                    .submenuleft-book {
                       z-index: 3;
                     }
                   }
                 }
-                
+                .mega-kitchen {
+                  &:hover {
+                    .submenuleft-kitchen {
+                      z-index: 3;
+                    }
+                  }
+                }
               }
-         
             }
           }
         }
@@ -291,31 +303,24 @@ header {
         font-size: 12px;
         color: var(--a-text-color);
         cursor: pointer;
-       
-
-        }
-        & input{
-          display: none;
-          &:checked .location{
-              display: flex;
-            }
-          
-        
       }
-    
+      & input {
+        display: none;
+      }
     }
-    .location{
+    .location {
       width: 100%;
       height: 100vh;
       background-color: #0000004d;
       position: absolute;
       top: 0;
       left: 0;
-     display:flex;
+      display: none;
       justify-content: center;
       align-items: center;
+      z-index: 999;
 
-      .cities{
+      .cities {
         width: 30%;
         height: 65%;
         background-color: #9a0606;
@@ -323,86 +328,77 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-                  
-        
-        .cityname-label{
+
+        .cityname-label {
           width: 90%;
           height: 15%;
           inset: 0;
           margin: auto;
-          box-shadow: 5px , 5px , #424242;
+          box-shadow: 5px, 5px, #424242;
           display: flex;
           justify-content: space-between;
-          .city-select{
-           width: 50%;
-           height: 100%;
-           background-color: chocolate;
-           display: flex;
-          
-           align-items: center;
+          .city-select {
+            width: 50%;
+            height: 100%;
+            background-color: chocolate;
+            display: flex;
+
+            align-items: center;
           }
-          .hide-icon{
+          .hide-icon {
             width: 50%;
             height: 100%;
             background-color: burlywood;
             display: flex;
-            & label{
+            & label {
               width: 24px;
               height: 24px;
               background-color: aqua;
-         margin-right: auto;
-         margin-top: auto;
-         margin-bottom: auto;
-                     
+              margin-right: auto;
+              margin-top: auto;
+              margin-bottom: auto;
             }
             & input {
               display: none;
-             
-              }
-            }
-          }
-
-        }
-        .city-names-parent{
-          width: 90%;
-          height: 85%;
-          inset: 0;
-          margin: auto;
-          background-color: chartreuse;
-          display: flex;
-          flex-direction: column;
-          overflow: auto;
-          .city-names-child{
-            width: 100%;
-            height: 100%;
-            padding: 16px  20px;
-            background-color: darkgoldenrod;
-            .city-child{
-              width: 100%;
-              height: 56px;
-              display: flex;
-              justify-content: space-between;
-              border-bottom: 1px #424242;
             }
           }
         }
-       
-       } 
-       
       }
-      
+      .city-names-parent {
+        width: 90%;
+        height: 85%;
+        inset: 0;
+        margin: auto;
+        background-color: chartreuse;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        .city-names-child {
+          width: 100%;
+          height: 100%;
+          padding: 16px 20px;
+          background-color: darkgoldenrod;
+          .city-child {
+            width: 100%;
+            height: 56px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px #424242;
+          }
+        }
+      }
     }
-  
+  }
+}
 
 .item-titr {
   color: #0c0c0c;
   font-size: 14px;
   margin: 16px;
-
-  
 }
-.location #show-city:checked{
-  display: flex;}
-.location #hide:checked{
+#show-city:checked ~ .location {
+  display: flex;
+}
+#hide:checked ~ .location {
   display: none;
 }
