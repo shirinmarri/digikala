@@ -1,224 +1,472 @@
-.rounditems{
-    width: 100%;
-    height: 155px;
-    padding: 0  115px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.rounditems {
+  width: 100%;
+  height: 155px;
+  padding: 0 115px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    .rounditem{
-        width: 82px;
-        height: 104px;
-       
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    
-        .round{
-        width: 55px;
-        height: 55px;
-        border-radius: 55px;
-         background-color: #f0f0f1;
-         & svg{
+  .rounditem {
+    width: 82px;
+    height: 104px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .round {
+      width: 55px;
+      height: 55px;
+      border-radius: 55px;
+      background-color: #f0f0f1;
+      & svg {
         display: block;
         margin: auto;
         margin-top: 12px;
-         }
+      }
 
-        & img{
-            width: 55px;
-            height: 55px;
-            object-fit: cover;
-        }
-        }
-
-       
-       .text{
-        color: var(--a-text-color);
-        font-size: 12px;
-        align-items: center;
-       }
-
+      & img {
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+      }
     }
+
+    .text {
+      color: var(--a-text-color);
+      font-size: 12px;
+      align-items: center;
+    }
+  }
 }
 .market {
-    width: 90%;
-    height: 110px;
-    background-color: #ebeeed;
-    margin: 15px 96px;
+  width: 90%;
+  height: 110px;
+  background-color: #ebeeed;
+  margin: 15px 96px;
+  border-radius: 20px;
+  .market-wrapper {
+    width: 100%;
+    height: 100%;
+
     border-radius: 20px;
-    .market-wrapper{
-        width: 100%;
-        height: 100%;
-        
-        border-radius: 20px;
-        .relative-market{
-            width: 100%;
+    .relative-market {
+      width: 100%;
+      height: 100%;
+      padding: 16px 40px 12px 40px;
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      .pic-wapper {
+        width: 465px;
+        height: 62px;
+
+        display: flex;
+        .layout {
+          width: 365px;
+          height: 100%;
+
+          display: flex;
+        }
+        .discount {
+          width: 100px;
+          height: 26px;
+          margin-top: 17px;
+          border-radius: 26px;
+          padding: 0 13px;
+          background-color: #029a49;
+          line-height: 26px;
+          & p {
+            color: white;
+            font-size: 12px;
+          }
+        }
+      }
+      .discount-wrapper {
+        width: 633px;
+        height: 74px;
+
+        display: flex;
+        .market-items {
+          width: 492px;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          .market1 {
+            width: 74px;
             height: 100%;
-            padding: 16px 40px 12px 40px;
-            display: flex;
-            justify-content: space-between;
-            text-decoration: none;
-            .pic-wapper{
-                width: 465px;
-                height: 62px;
-              
-                display: flex;
-                .layout{
-                    width: 365px;
-                    height: 100%;
-                  
-                display: flex;
 
-                        }
-                      .discount{
-                        width: 100px;
-                        height: 26px;
-                        margin-top: 17px;
-                        border-radius: 26px;
-                        padding: 0 13px;
-                        background-color: #029a49;
-                        line-height: 26px;
-                        & p{
-                            color: white;
-                            font-size: 12px;
-                        }
-                      }  
-                    }
-            .discount-wrapper{
-                width: 633px;
-                height: 74px;
-              
-                display: flex;
-                .market-items{
-                    width: 492px;
-                    height: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    .market1{
-                        width: 74px;
-                        height: 100%;
-                        
-                        .pic{
-                            width: 68px;
-                            height: 68px;
-                            border-radius: 68px;
-                            background-color: white;
-                            & img{
-                                width: 60px;
-                                height: 60px;
-                                border-radius: 60px;
-                                object-fit: cover;
-                            }
-                    
-                        }
-                           }
-
-                }
-                .dis-item{
-                    width: 140px;
-                    height: 50px;
-                    margin: 12px 0;
-                    padding: 12px 16px;
-                    border-radius: 50px;
-                    background-color: white;
-                    display: flex;
-                    align-items: center;
-                }
-            }            
+            .pic {
+              width: 68px;
+              height: 68px;
+              border-radius: 68px;
+              background-color: white;
+              & img {
+                width: 60px;
+                height: 60px;
+                border-radius: 60px;
+                object-fit: cover;
+              }
+            }
+          }
         }
-
-
+        .dis-item {
+          width: 140px;
+          height: 50px;
+          margin: 12px 0;
+          padding: 12px 16px;
+          border-radius: 50px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+        }
+      }
     }
-        }
+  }
+}
 
-.cards{
-    width: 90%;
-    height: 241px;
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 96px;
-    .card{
-        width: 322px;
-        height: 100%;
-        border-radius: 20px;
-       
-        & img{
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-            object-fit: cover;
-        }
-        &:hover{
-            cursor: pointer;
-        }
+.cards {
+  width: 90%;
+  height: 241px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 96px;
+  .card {
+    width: 322px;
+    height: 100%;
+    border-radius: 20px;
 
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
     }
-}  
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
 
 /* <!-- خرید بر اساس دسته بندی شروع --> */
-.shop-class{
-    width: 90%;
-    height: 456px;
-    padding: 16px 0 40px 0;
- 
-    margin: 10px 96px
-    ;
-    .titr{
-        width: fit-content;
-        height: 60px;
-        margin-bottom: 36px;
-        margin: 0 auto;
-    
-        & h3{
-            font-size: 20px;
-            color: black;
-        }
+.shop-class {
+  width: 90%;
+  height: 456px;
+  padding: 16px 0 40px 0;
+
+  margin: 10px 96px;
+  .titr {
+    width: fit-content;
+    height: 60px;
+    margin-bottom: 36px;
+    margin: 0 auto;
+
+    & h3 {
+      font-size: 20px;
+      color: black;
     }
-.shop-rows{
+  }
+  .shop-rows {
     width: 100%;
     height: 320px;
-  
-    .shop-row{
-        width: 100%;
-        height: 160px;
-    
-        display: flex;
-        justify-content: space-between;
-        .shop-item{
-            width: 108px;
-            height: 100%;
-      
-            & div{
-                width: 100px;
-                height: 100px;
-                border-radius: 100px;
-            
-                overflow: visible;
-                & img{
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 100px;
-                    object-fit: cover;
-                }
-               
-            }
-            & p{
-                font-size: 12px;
-                color: black;
-                line-height: 20px;
-            text-align: center;
 
+    .shop-row {
+      width: 100%;
+      height: 160px;
+
+      display: flex;
+      justify-content: space-between;
+      .shop-item {
+        width: 108px;
+        height: 100%;
+
+        & div {
+          width: 100px;
+          height: 100px;
+          border-radius: 100px;
+
+          overflow: visible;
+          & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 100px;
+            object-fit: cover;
+          }
+        }
+        & p {
+          font-size: 12px;
+          color: black;
+          line-height: 20px;
+          text-align: center;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* <!-- خرید بر اساس دسته بندی پایان --> */
+.two-pic {
+  width: 90%;
+  height: 270px;
+  margin: 10px 96px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  .one-pic {
+    width: 660px;
+    height: 264px;
+    border-radius: 20px;
+    & img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: contain;
+    }
+  }
+}
+.four-cards {
+  width: 90%;
+  height: 416px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  margin: 16px 96px;
+  display: flex;
+  .four-card {
+    width: 25%;
+    height: 100%;
+    padding: 8px 20px;
+    border-left: 1px solid var(--border);
+    .four-card-titr{
+        width: 100%;
+        height: 60px;
+      
+        & h4{
+            font-size: 16px;
+            color: #23254e;
+            line-height: 24px;
+            padding-top: 8px;
             }
-            &:hover{
-                cursor: pointer;
+        & p{
+            font-size: 11px;
+            color: #81858b;
+            line-height: 16px;
+            padding-top: 8px;
+        }    
+    }
+    .gridpics{
+        width: 100%;
+        height: 300px;
+        display: grid;
+        grid-template-rows:50% 50% ;
+        grid-template-columns: 50% 50%;
+        & a{
+            width: 100%;
+            height: 100%;
+
+            & img{
+                width: 130px;
+                height: 130px;
             }
         }
-       
+        
 
     }
-}    
+   
+  }
+  .see-more{
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+   & span{
+    font-size: 12px;
+    color: #19bfd3;
+   }
 }
-      
-/* <!-- خرید بر اساس دسته بندی پایان --> */
+}
+.digiclub {
+  width: 90%;
+  height: 88px;
+  margin: 16px 96px;
+  padding: 12px 12px 16px 8px;
+  border-radius: 20px;
+  background: rgb(0, 114, 149);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 114, 149, 1) 0%,
+    rgba(27, 140, 175, 1) 35%,
+    rgba(53, 166, 200, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+
+  .digilogo {
+    width: 146px;
+    height: 100%;
+    padding-top: 19px;
+    padding-right: 27px;
+
+    & a {
+      width: 100%;
+      height: 100%;
+
+      cursor: pointer;
+      & img {
+        width: 119px;
+        height: 33px;
+      }
+    }
+  }
+  .bakht {
+    width: 804px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+  .chance {
+    width: 100%;
+    height: 63px;
+    display: flex;
+
+    .chance-pic {
+      width: 256px;
+      height: 63px;
+      line-height: 63px;
+      background-color: white;
+     
+
+      & a {
+        width: 100%;
+        height: 63px;
+        line-height: 63px;
+        display: flex;
+        text-decoration: none;
+        .chance-text {
+          width: 86px;
+          height: 26px;
+          margin-right: 10px;
+          display: flex;
+          & span {
+            font-size: 12px;
+            color: #0c0c0c;
+            margin-right: 6px;
+          }
+        }
+        & img {
+          width: 166px;
+          height: 60px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+}
+.uniq{
+    width: 90%;
+    height: 168px;
+    border-radius: 20px;
+    margin: 16px 96px;
+    & img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}
+.reading{
+    width: 90%;
+    height: 320px;
+    margin: 16px 96px;
+  
+    .read-titr{
+       width: 100%;
+       height: 66px;
+       padding: 16px;
+       display: flex;
+       justify-content: space-between;
+       & div{
+        line-height: 34px;
+        color: #0c0c0c;
+       }
+       .see-more{
+        width: 170px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+       & span{
+        font-size: 12px;
+        color: #19bfd3;
+       }
+    }
+
+    }
+    .read-cards{
+        width: 100%;
+        height: 254px;
+        display: flex;
+        justify-content: space-between;
+        .read-card{
+            width: 23%;
+            height: 100%;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+
+            & img{
+                width: 100%;
+                height: 201px;
+                object-fit: cover;
+                border-radius: 20px 20px 0 0;
+                  }
+            & p {
+                width: 100%;
+                height: 26px;
+                padding: 8px;
+                font-size: 12px;
+                color: #0c0c0c;
+            }
+        }
+    }
+}
+.call-me{
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background-color: #EF4056;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50px;
+    bottom: 30px;
+    z-index: 4;
+}
+
+.green-market{
+    width: 130px;
+    height: 52px;
+    border-radius: 52px;
+    background-color: #029a49;
+    position: fixed;
+    z-index: 4;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    & span{
+        font-size: medium;
+        color: white;
+    }
+   
+
+}

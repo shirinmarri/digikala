@@ -23,6 +23,9 @@
     --a-text-color:#62666D;
     --megamenue-color: #3f4064;
     --mega-bg:rgb(240,240,241);
+    --navigation-arrow:#424750;
+    --navigation-border:#coc2c5;
+    --border:#e0e0e2;
 
 
 }
@@ -37,4 +40,17 @@
     height: 24px;
     background-color: red;
     color: red;
+}
+.red-dis-tag{
+    width: 32px;
+    height: 20px;
+    padding: 0 4px;
+    border-radius: 50%;
+    background-color: #d32f2f;
+    text-align: center;
+    & span{
+        font-size: 12px;
+        color: white;
+
+    }
 }

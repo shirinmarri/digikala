@@ -111,6 +111,9 @@ header {
         height: 40px;
         padding: 8px;
       }
+      &:hover{
+        cursor: pointer;
+      }
     }
   }
   .bottom {
@@ -323,7 +326,7 @@ header {
       .cities {
         width: 30%;
         height: 65%;
-        background-color: #9a0606;
+        background-color: white;
         border-radius: 12px;
         display: flex;
         flex-direction: column;
@@ -340,7 +343,6 @@ header {
           .city-select {
             width: 50%;
             height: 100%;
-            background-color: chocolate;
             display: flex;
 
             align-items: center;
@@ -348,12 +350,10 @@ header {
           .hide-icon {
             width: 50%;
             height: 100%;
-            background-color: burlywood;
             display: flex;
             & label {
               width: 24px;
               height: 24px;
-              background-color: aqua;
               margin-right: auto;
               margin-top: auto;
               margin-bottom: auto;
@@ -369,7 +369,6 @@ header {
         height: 85%;
         inset: 0;
         margin: auto;
-        background-color: chartreuse;
         display: flex;
         flex-direction: column;
         overflow: auto;
@@ -377,7 +376,7 @@ header {
           width: 100%;
           height: 100%;
           padding: 16px 20px;
-          background-color: darkgoldenrod;
+          background-color: ;
           .city-child {
             width: 100%;
             height: 56px;
