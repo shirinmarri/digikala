@@ -210,33 +210,33 @@
 
 /* <!-- خرید بر اساس دسته بندی پایان --> */
 .two-pic {
-  width: 90%;
-  height: 270px;
+    width: 90%;
+    height: 270px;
   margin: 10px 96px;
   display: flex;
   justify-content: space-between;
-  border-radius: 20px;
+  
   .one-pic {
-    width: 660px;
+    width: 48%;
     height: 264px;
     border-radius: 20px;
     & img {
       width: 100%;
       height: 100%;
       border-radius: 20px;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 }
 .four-cards {
-  width: 90%;
+  width: calc(100%-192px);
   height: 416px;
   border-radius: 20px;
   border: 1px solid var(--border);
   margin: 16px 96px;
   display: flex;
   .four-card {
-    width: 25%;
+    width: 24%;
     height: 100%;
     padding: 8px 20px;
     border-left: 1px solid var(--border);
