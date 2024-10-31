@@ -32,15 +32,19 @@ footer {
             display: flex;
             line-height: 40px;
             justify-content: center;
-            & p{
+            & a{
                 font-size: 12px;
                 color: #A1A3A8;
+                text-decoration: none;
             }
             & svg{
                 padding-top: 10px;
             }
 
          } 
+         &:active{
+
+         }
         }
         .support{
             width: 100%;

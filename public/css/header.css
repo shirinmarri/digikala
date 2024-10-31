@@ -152,24 +152,35 @@ header {
           align-items: center;
           gap: 10px;
 
+
           .item {
+          
             display: flex;
             align-items: center;
             gap: 5px;
-
+            height: 40px;
             list-style: none;
-
+          
             & a {
+              height: 39px;
               text-decoration: none;
               color: var(--a-text-color);
               font-size: 12px;
               display: flex;
               align-items: center;
               gap: 5px;
+              
+              border-bottom: 0;
+              transition: border-bottom  300ms; 
+                      
+            }
+            a:hover{
+              border-bottom:2px  red solid;
             }
             &:hover {
               .submenue {
                 display: block;
+                
               }
             }
             .submenue {
@@ -177,7 +188,7 @@ header {
               height: 500px;
               background-color: #424242;
               position: absolute;
-              top: 30px;
+              top: 40px;
               z-index: 9999999999;
               display: none;
 
@@ -300,7 +311,9 @@ header {
                 }
               }
             }
+           
           }
+         
         }
       }
     }
